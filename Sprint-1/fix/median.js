@@ -11,7 +11,7 @@ function calculateMedian(list) {
     return null;
   }
 
-  const nums = list.filter(v => typeof v === "number" && !isNaN(v));
+  const nums = list.filter(i => typeof i === "number" && !isNaN(i));
 
   if (nums.length === 0) {
     return null;
@@ -29,8 +29,5 @@ function calculateMedian(list) {
 
   return (sorted[mid - 1] + sorted[mid]) / 2;
 }
-
-
-
 
 module.exports = calculateMedian;
