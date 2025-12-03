@@ -9,7 +9,7 @@ const address = {
   street: "Imaginary Road",
   city: "Manchester",
   country: "England",
-  postcode: "XYZ 123",
+  postcode: "xyz 123",
 };
 
-console.log(`My house number is ${address[0]}`);
+console.log(`my house number is ${address.houseNumber}`);
