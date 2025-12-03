@@ -1,6 +1,6 @@
 function contains(obj, prop) {
 
-    if (typeof obj !== "object" && obj !== null ) {
+    if (typeof obj !== "object" && obj === null ) {
         return false;
     } else if (Array.isArray(obj)) {
         throw new Error ("invalid input"); 
