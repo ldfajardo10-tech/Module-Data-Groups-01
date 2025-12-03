@@ -1,5 +1,6 @@
 // Predict and explain first...
-
+// the const is an object, not an array, so [0] in the console log isn't correc
+t
 // This code should log out the houseNumber from the address object
 // but it isn't working...
 // Fix anything that isn't working
