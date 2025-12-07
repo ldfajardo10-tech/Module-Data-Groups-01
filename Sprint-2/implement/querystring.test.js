@@ -10,3 +10,15 @@ test("parses querystring values containing =", () => {
     "equation": "x=y+1",
   });
 });
+
+test("multiple key-value pairs", () => {
+  expect(parseQueryString("a=1&b=2")).toEqual({ a: "1", b: "2" });
+});
+
+test("only = character", () => {
+  expect(parseQueryString("=")).toEqual({ "": "" });
+});
+
+test("empty key with value", () => {
+  expect(parseQueryString("=value")).toEqual({ "": "value" });
+});
