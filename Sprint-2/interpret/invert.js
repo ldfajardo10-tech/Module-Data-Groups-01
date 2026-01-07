@@ -30,14 +30,14 @@ function invert(obj) {
 // e) Fix the implementation of invert (and write tests to prove it's fixed!) 
 
 test("inverts object with numeric strings value", () => {
-  expect(invert({ a: 1, b: 2 })).toBe({ 1: a, 2: b });
+  expect(invert({ "a": 1, "b": 2 })).toEqual({ 1: "a", 2: "b" });
 });
 
 test("inverts object with strings value", () => {
-  expect(invert({ a: "hello", b: "world" })).toBe({ "hello": a, "world": b });
+  expect(invert({ "a": "hello", "b": "world" })).toEqual({ "hello": "a", "world": "b" });
 });
 
 test("inverts object with numeric strings value and literal strings value", () => {
-  expect(invert({ a: "hello", b: 5 })).toBe({ hello: a, 5 : b });
+  expect(invert({ "a": "hello", "b": 5 })).toEqual({ hello: "a", 5 : "b" });
 });
 
