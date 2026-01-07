@@ -33,3 +33,29 @@ It should return:
    'CA': 'CAD'
  }
 */
+
+test("returns empty object when passed an empty array", () => {
+  expect(createLookup([])).toEqual({});
+});
+
+test("returns null when passed a non-array input", () => {
+  expect(createLookup("hello")).toBeNull();
+  expect(createLookup({})).toBeNull();
+  expect(createLookup(123)).toBeNull();
+});
+
+test("creates a lookup object from an array of code pairs", () => {
+  const countryCurrency = [
+    ["US", "USD"],
+    ["CA", "CAD"],
+    ["MX", "MXN"],
+  ];
+
+  const expected = {
+    US: "USD",
+    CA: "CAD",
+    MX: "MXN",
+  };
+
+  expect(createLookup(countryCurrency)).toEqual(expected);
+});

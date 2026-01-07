@@ -8,12 +8,5 @@ function createLookup(codePairs) {
 
 } 
 
-    const countryCurrency = [
-     ["US", "USD"],
-     ["CA", "CAD"],
-   ];
-
-const result = createLookup(countryCurrency);
-console.log(result);
-
+    
 module.exports = createLookup;
