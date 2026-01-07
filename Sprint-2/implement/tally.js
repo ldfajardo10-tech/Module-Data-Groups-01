@@ -18,10 +18,5 @@ function tally(arr) {
 
 }
 
-console.log(tally(["a","a","c"]));
-console.log(tally(["a", "5", "5"]));
-console.log(tally([]));
-console.log(tally("hello world"));
-
 
 module.exports = tally;
