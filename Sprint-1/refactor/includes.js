@@ -7,7 +7,7 @@ function includes(list, target) {
       return true;
     }
   }
-  return false;
+  return false; // return false added
 }
 
 module.exports = includes;
